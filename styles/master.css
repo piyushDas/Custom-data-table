@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 980px;
+}
+
+#data-table table{
+    margin: auto;
+    width: 100%;
+}
+
+#data-table th, #data-table td {
+    text-align: right;
+    padding: 8px 15px;
+    width: 20%;
+}
+
+#data-table td {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+tr:nth-child(even) {
+    background: #f3f3f3
+}
+
+
+tr:nth-child(odd) {
+    background: #fff
+}
+
+.border-bottom {
+    border-bottom: 2px solid #333;
+}
+
+.table-search-bar {
+    display: flex;
+}
+
+.table-search-bar > div {
+    width: 50%;
+}
+
+.table-search-bar > div:last-of-type{
+    text-align: right;
+}
+
+.table-search-bar input{
+    height: 28px;
+    width: 220px;
+    border: 1px solid #aaa;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+select{
+    height: 28px;
+    padding: 5px;
+}
+.table-content {
+    /* height: 240px; */
+    overflow-y: hidden;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.page-buttons{
+    display: inline-block;
+    height: 36px;
+    width: 20px;
+    line-height: 36px;
+    margin: 0 5px;
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.7, 0.5);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.page-buttons-broad{
+    display: inline-block;
+    height: 36px;
+    width: 50px;
+    line-height: 36px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.page-buttons.active{
+    width: 36px;
+    border: 1px solid #aaa;
+}
+
+.padd-ar-10 {
+    padding: 10px;
+}
+
+#data-table th input{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 8px;
+    color: #999;
+}
+
+.hide {
+    display: none !important;
+}
+
+.sorter {
+    width: 10px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    margin-left: 2px;
+}
+
+.asc {
+    display: inline-block;
+}
+
+.desc {
+    transform: rotateX(180deg);
+    display: inline-block;
+}
+
+.no-data {
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 21px;
+    /* color: #aaa; */
+    font-style: italic;
+    padding: 20px;
+}
+
+.disabled-button {
+    color: #aaa;
+    cursor: not-allowed;
+}
